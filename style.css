@@ -1,0 +1,129 @@
+#container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    width: 90%;
+    margin: 0;
+    padding: .5em 5%;
+}
+
+nav {
+    width: 90%;
+    margin: 0;
+    padding: .5em 5%;
+}
+
+main {
+    width: 90%;
+    margin: 1.5em 5%;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap; /*shorthand for flex-direction: row & flex-wrap: wrap*/
+    justify-content: space-around;
+}
+
+section {
+    margin: 0 .5em;
+    padding: 0;
+    border-bottom: 1px solid #e3f2fd;
+    text-align: center;
+    flex: initial; /*flex-grow: 0, flex-shrink: 1, flex-basis: auto*/
+}
+
+@media all and (min-width: 300px) {
+    section {
+        width: 40%; /*2 nations across*/
+        /*margin: 5% .5em;*/
+    }
+}
+
+@media all and (min-width: 420px) {
+    section {
+        width: 28%; /*3 nations across*/
+        /*margin: 5% .5em;*/
+    }
+}
+
+@media all and (min-width: 580px) {
+    section {
+        width: 20%; /*4 nations across*/
+        /*margin: 2.5% .5em;*/
+    }
+}
+
+@media all and (min-width: 760px) {
+    section {
+        width: 15%; /*5 nations across*/
+        /*margin: 2.5% .5em;*/
+    }
+}
+
+@media all and (min-width: 900px) {
+    section {
+        width: 14%; /*6 nations across*/
+        /*margin: 2.5% .5em;*/
+    }
+}
+
+@media all and (min-width: 1000px) {
+    section {
+        width: 12%; /*7 nations across*/
+        /*margin: 2.5% .5em;*/
+    }
+}
+
+@media all and (min-width: 1200px) {
+    section {
+        width: 10.5%; /*8 nations across*/
+        /*margin: 1% .5em;*/
+    }
+}
+
+footer {
+    width: 90%;
+    margin: 0;
+    padding: .5em 5%;
+}
+
+h1 {
+    line-height: 1.5;
+    font-family: 'Francois One', sans-serif;
+}
+
+@media all and (min-width: 300px) {
+    h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media all and (min-width: 400px) {
+    h1 {
+        font-size: 1.4em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    h1 {
+        font-size: 1.6em;
+    }
+}
+
+p.nation-name, p.nation-rate, nav label, footer p {
+    font-size: .875em;
+    line-height: 1.5;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+p.nation-region {
+    font-size: .875em;
+    line-height: 1.5;
+    font-family: 'Francois One', sans-serif;
+    font-weight: 300;
+    padding: 0 .25em;
+    display: inline-block;
+}
