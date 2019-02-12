@@ -1442,12 +1442,12 @@ birthrates = {
             const pea2 = document.createElement("p");
             const pea3 = document.createElement("p");
 
+            //Assign class names to p elements.
             pea1.className = "nation-name";
             pea2.className = "nation-rate";
             pea3.className = "nation-region";
 
-            //const span = document.createElement("span");
-
+            //Assign background colors to "nation-region" class.
             if (srank[key].region === "Africa") {
                 pea3.style.background = "#ffccbc";
             } else if (srank[key].region === "Caribbean") {
@@ -1476,7 +1476,7 @@ birthrates = {
                 pea3.style.background = "#90caf9";
             }
 
-            //Assign text content to p element.
+            //Assign text content to p elements.
             pea1.textContent = srank[key].nation;
             pea2.textContent = srank[key].rate;
             pea3.textContent = srank[key].region;
@@ -1486,11 +1486,9 @@ birthrates = {
             section.appendChild(pea1);
             section.appendChild(pea2);
  
-
             //Join section and figure elements.
             const main = document.querySelector("main");
             main.appendChild(section);
-
         });
     }
     
