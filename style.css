@@ -37,49 +37,42 @@ section {
 @media all and (min-width: 300px) {
     section {
         width: 40%; /*2 nations across*/
-        /*margin: 5% .5em;*/
     }
 }
 
 @media all and (min-width: 420px) {
     section {
         width: 28%; /*3 nations across*/
-        /*margin: 5% .5em;*/
     }
 }
 
 @media all and (min-width: 580px) {
     section {
         width: 20%; /*4 nations across*/
-        /*margin: 2.5% .5em;*/
     }
 }
 
 @media all and (min-width: 760px) {
     section {
         width: 15%; /*5 nations across*/
-        /*margin: 2.5% .5em;*/
     }
 }
 
 @media all and (min-width: 900px) {
     section {
         width: 14%; /*6 nations across*/
-        /*margin: 2.5% .5em;*/
     }
 }
 
 @media all and (min-width: 1000px) {
     section {
         width: 12%; /*7 nations across*/
-        /*margin: 2.5% .5em;*/
     }
 }
 
 @media all and (min-width: 1200px) {
     section {
         width: 10.5%; /*8 nations across*/
-        /*margin: 1% .5em;*/
     }
 }
 
