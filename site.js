@@ -1485,12 +1485,11 @@ birthrates = {
             section.appendChild(pea3);
             section.appendChild(pea1);
             section.appendChild(pea2);
- 
+
             //Join section and figure elements.
             const main = document.querySelector("main");
             main.appendChild(section);
         });
     }
-    
-}; //close birthrates
 
+}; //close birthrates
