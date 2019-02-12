@@ -1,5 +1,5 @@
 //Global variable (actually let)
-let sample;
+let birthrates;
 
 //Monitor page, after it loads invoke function.
 //You'll need the stylesheet so "window" and load" over "document"
@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     "use strict";
 
     //Invoke the sort high to low function.
-    sample.sortHighToLow();
+    birthrates.sortHighToLow();
 
     //Get nav and ready event listener. If user clicks...
     const nav = document.querySelector("nav");
@@ -16,17 +16,17 @@ window.addEventListener("load", function () {
     //...then invoke a function.
     nav.addEventListener("click", function (element) {
         if (element.target.id === "high-to-low") {
-            sample.sortHighToLow();
+            birthrates.sortHighToLow();
         } else if (element.target.id === "low-to-high") {
-            sample.sortLowToHigh();
+            birthrates.sortLowToHigh();
         }
     });
 
 
 });
 
-//The sample variable (let)
-sample = {
+//The birthrates variable (let)
+birthrates = {
 
     items: [
 
@@ -1404,13 +1404,13 @@ sample = {
         "use strict";
 
         //Sort object. Pass result to other function.
-        const highToLow = sample.items.sort(function (a, b) {
+        const highToLow = birthrates.items.sort(function (a, b) {
             return a.rank - b.rank;
         });
 
         //Invoke other functions.
-        sample.removeAll();
-        sample.displayResults(highToLow);
+        birthrates.removeAll();
+        birthrates.displayResults(highToLow);
     },
 
     //Sort nations by rank, low to high.
@@ -1418,13 +1418,13 @@ sample = {
         "use strict";
 
         //Sort object. Pass result to other function.
-        const lowToHigh = sample.items.sort(function (a, b) {
+        const lowToHigh = birthrates.items.sort(function (a, b) {
             return -(a.rank - b.rank);
         });
 
         //Invoke other functions.
-        sample.removeAll();
-        sample.displayResults(lowToHigh);
+        birthrates.removeAll();
+        birthrates.displayResults(lowToHigh);
     },
 
     //Receive sort result. Build and display elements.
@@ -1494,5 +1494,5 @@ sample = {
         });
     }
     
-}; //close sample
+}; //close birthrates
 
