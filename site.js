@@ -14,15 +14,13 @@ window.addEventListener("load", function () {
     const nav = document.querySelector("nav");
 
     //...then invoke a function.
-    nav.addEventListener("click", function (element) {
-        if (element.target.id === "high-to-low") {
+    nav.addEventListener("click", function (event) {
+        if (event.target.id === "high-to-low") {
             birthrates.sortHighToLow();
-        } else if (element.target.id === "low-to-high") {
+        } else if (event.target.id === "low-to-high") {
             birthrates.sortLowToHigh();
         }
     });
-
-
 });
 
 //The birthrates variable (let)
