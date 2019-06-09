@@ -85,5 +85,30 @@ span.nation-region {
     font-family: 'Francois One', sans-serif;
     font-weight: 300;
     padding: 0 .25em;
-    display: inline-block;
+}
+
+main p {
+    display: flex;
+    flex-flow: row wrap; /*shorthand for flex-direction: row & flex-wrap: wrap*/
+}
+
+.nation-rate, .nation-name, .nation-region {
+    flex: initial; /*flex-grow: 0, flex-shrink: 1, flex-basis: auto*/
+    justify-content: flex-start; /*main axis*/
+    align-items: stretch; /*cross-axis*/
+}
+.nation-rate {
+    width: 10%;
+    margin-right: 5%;
+}
+
+.nation-name {
+    width: 30%;
+    margin-right: 5%;
+}
+
+.nation-region {
+    width: 15%;
+    margin-right: 5%;
+    text-align: center;
 }
