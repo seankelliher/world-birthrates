@@ -1436,53 +1436,53 @@ birthrates = {
             const para = document.createElement("p");
 
             //Create p elements.
-            const pea1 = document.createElement("p");
-            const pea2 = document.createElement("p");
-            const pea3 = document.createElement("p");
+            const span1 = document.createElement("span");
+            const span2 = document.createElement("span");
+            const span3 = document.createElement("span");
 
             //Assign class names to p elements.
-            pea1.className = "nation-name";
-            pea2.className = "nation-rate";
-            pea3.className = "nation-region";
+            span1.className = "nation-name";
+            span2.className = "nation-rate";
+            span3.className = "nation-region";
 
             //Assign background colors to "nation-region" class.
             if (srank[key].region === "Africa") {
-                pea3.style.background = "#ffccbc";
+                span3.style.background = "#ffccbc";
             } else if (srank[key].region === "Caribbean") {
-                pea3.style.background = "#b2ebf2";
+                span3.style.background = "#b2ebf2";
             } else if (srank[key].region === "Central America") {
-                pea3.style.background = "#bdc192";
+                span3.style.background = "#bdc192";
             } else if (srank[key].region === "Central Asia") {
-                pea3.style.background = "#5d99c6";
+                span3.style.background = "#5d99c6";
             } else if (srank[key].region === "East Asia") {
-                pea3.style.background = "#bbdefb";
+                span3.style.background = "#bbdefb";
             } else if (srank[key].region === "Europe") {
-                pea3.style.background = "#e0e0e0";
+                span3.style.background = "#e0e0e0";
             } else if (srank[key].region === "Middle East") {
-                pea3.style.background = "#c5cae9";
+                span3.style.background = "#c5cae9";
             } else if (srank[key].region === "North America") {
-                pea3.style.background = "#e6ee9c";
+                span3.style.background = "#e6ee9c";
             } else if (srank[key].region === "Oceania") {
-                pea3.style.background = "#b2dfdb";
+                span3.style.background = "#b2dfdb";
             } else if (srank[key].region === "Scandinavia") {
-                pea3.style.background = "#bdbdbd";
+                span3.style.background = "#bdbdbd";
             } else if (srank[key].region === "South America") {
-                pea3.style.background = "#f0f4c3";
+                span3.style.background = "#f0f4c3";
             } else if (srank[key].region === "South Asia") {
-                pea3.style.background = "#8aacc8";
+                span3.style.background = "#8aacc8";
             } else if (srank[key].region === "Southeast Asia") {
-                pea3.style.background = "#90caf9";
+                span3.style.background = "#90caf9";
             }
 
             //Assign text content to p elements.
-            pea1.textContent = srank[key].nation;
-            pea2.textContent = srank[key].rate;
-            pea3.textContent = srank[key].region;
+            span1.textContent = srank[key].nation;
+            span2.textContent = srank[key].rate;
+            span3.textContent = srank[key].region;
 
             //Join figure and p elements.
-            para.appendChild(pea2);
-            para.appendChild(pea1);
-            para.appendChild(pea3);
+            para.appendChild(span2);
+            para.appendChild(span1);
+            para.appendChild(span3);
 
             //Join paragraph and span elements.
             const main = document.querySelector("main");
