@@ -43,56 +43,6 @@ main {
     justify-content: space-around;
 }
 
-section {
-    margin: 0 .5em;
-    padding: 0;
-    border-bottom: 1px solid #e3f2fd;
-    text-align: center;
-    flex: initial; /*flex-grow: 0, flex-shrink: 1, flex-basis: auto*/
-}
-
-@media all and (min-width: 300px) {
-    section {
-        width: 40%; /*2 nations across*/
-    }
-}
-
-@media all and (min-width: 420px) {
-    section {
-        width: 28%; /*3 nations across*/
-    }
-}
-
-@media all and (min-width: 580px) {
-    section {
-        width: 20%; /*4 nations across*/
-    }
-}
-
-@media all and (min-width: 760px) {
-    section {
-        width: 15%; /*5 nations across*/
-    }
-}
-
-@media all and (min-width: 900px) {
-    section {
-        width: 14%; /*6 nations across*/
-    }
-}
-
-@media all and (min-width: 1000px) {
-    section {
-        width: 12%; /*7 nations across*/
-    }
-}
-
-@media all and (min-width: 1200px) {
-    section {
-        width: 10.5%; /*8 nations across*/
-    }
-}
-
 footer {
     width: 90%;
     margin: 0;
