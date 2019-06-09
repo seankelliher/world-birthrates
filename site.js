@@ -1432,7 +1432,7 @@ birthrates = {
         //For each function.
         Object.keys(srank).forEach(function (key) {
 
-            //Create paragraph element.
+            //Create p element.
             const para = document.createElement("p");
 
             //Create p elements.
@@ -1479,7 +1479,7 @@ birthrates = {
             span2.textContent = srank[key].rate;
             span3.textContent = srank[key].region;
 
-            //Join figure and p elements.
+            //Join span and p elements.
             para.appendChild(span2);
             para.appendChild(span1);
             para.appendChild(span3);
