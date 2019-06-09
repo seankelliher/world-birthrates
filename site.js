@@ -1480,9 +1480,9 @@ birthrates = {
             pea3.textContent = srank[key].region;
 
             //Join figure and p elements.
-            section.appendChild(pea3);
-            section.appendChild(pea1);
             section.appendChild(pea2);
+            section.appendChild(pea1);
+            section.appendChild(pea3);
 
             //Join section and figure elements.
             const main = document.querySelector("main");
