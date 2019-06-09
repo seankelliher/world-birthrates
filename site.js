@@ -1432,8 +1432,8 @@ birthrates = {
         //For each function.
         Object.keys(srank).forEach(function (key) {
 
-            //Create figure element.
-            const section = document.createElement("section");
+            //Create paragraph element.
+            const para = document.createElement("p");
 
             //Create p elements.
             const pea1 = document.createElement("p");
@@ -1480,13 +1480,13 @@ birthrates = {
             pea3.textContent = srank[key].region;
 
             //Join figure and p elements.
-            section.appendChild(pea2);
-            section.appendChild(pea1);
-            section.appendChild(pea3);
+            para.appendChild(pea2);
+            para.appendChild(pea1);
+            para.appendChild(pea3);
 
-            //Join section and figure elements.
+            //Join paragraph and span elements.
             const main = document.querySelector("main");
-            main.appendChild(section);
+            main.appendChild(para);
         });
     }
 
