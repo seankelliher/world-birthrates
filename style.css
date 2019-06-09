@@ -122,14 +122,14 @@ h1 {
     }
 }
 
-p.nation-name, p.nation-rate, nav label, footer p {
+span.nation-name, span.nation-rate, nav label, footer p {
     font-size: .875em;
     line-height: 1.5;
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
 
-p.nation-region {
+span.nation-region {
     font-size: .875em;
     line-height: 1.5;
     font-family: 'Francois One', sans-serif;
