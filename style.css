@@ -87,12 +87,12 @@ span.nation-region {
 main p {
     display: flex;
     flex-flow: row wrap; /*shorthand for flex-direction: row & flex-wrap: wrap*/
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross-axis*/
 }
 
 .nation-rate, .nation-name, .nation-region {
     flex: initial; /*flex-grow: 0, flex-shrink: 1, flex-basis: auto*/
-    justify-content: flex-start; /*main axis*/
-    align-items: stretch; /*cross-axis*/
 }
 
 .nation-rate {
