@@ -70,15 +70,15 @@ h1 {
 }
 
 span.nation-name, span.nation-rate, nav label, footer p {
-    font-size: .875em;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.8;
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
 
 span.nation-region {
-    font-size: .875em;
-    line-height: 1.5;
+    font-size: 1em;
+    line-height: 1.8;
     font-family: 'Francois One', sans-serif;
     font-weight: 300;
     padding: 0 .25em;
