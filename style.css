@@ -5,39 +5,11 @@
     padding: 0;
 }
 
+/*header and its contents*/
 header {
     width: 90%;
     margin: 0;
     padding: .5em 5%;
-}
-
-nav {
-    width: 90%;
-    margin: 0;
-    padding: .5em 5%;
-}
-
-/*Clearfix for nav*/
-nav::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
-input {
-    cursor: pointer;
-}
-
-.radio-button {
-    margin: 0 1.4em 0 0;
-    padding: 0;
-    float: left;
-}
-
-main {
-    width: 90%;
-    margin: 1.5em 5%;
-    padding: 0;
 }
 
 h1 {
@@ -63,30 +35,86 @@ h1 {
     }
 }
 
-header p, nav label, footer p {
+header p {
     line-height: 1.8;
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
-    header p, nav label, footer p {
+    header p {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 600px) {
-    header p, nav label, footer p {
+    header p {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 900px) {
-    header p, nav label, footer p {
+    header p {
         font-size: 1em;
     }
 }
 
+/*nav and its contents*/
+nav {
+    width: 90%;
+    margin: 0;
+    padding: .5em 5%;
+}
+
+/*Clearfix for nav*/
+nav::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+nav label {
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+@media all and (min-width: 300px) {
+    nav label {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    nav label {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    nav label {
+        font-size: 1em;
+    }
+}
+
+input {
+    cursor: pointer;
+}
+
+.radio-button {
+    margin: 0 1.4em 0 0;
+    padding: 0;
+    float: left;
+}
+
+/*main and its contents*/
+main {
+    width: 90%;
+    margin: 1.5em 5%;
+    padding: 0;
+}
+
+/*The "p" within "main" is the flexbox container.*/
 main p {
     display: flex;
     flex-flow: row wrap; /*shorthand for flex-direction, flex-wrap*/
@@ -96,7 +124,7 @@ main p {
 }
 
 .nation-rate {
-    flex: initial; /*flex-grow: 0, flex-shrink: 1, flex-basis: auto*/
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
     margin: 0 5% 0 0;
     padding: 0;
     line-height: 1.8;
@@ -126,7 +154,7 @@ main p {
 }
 
 .nation-name {
-    flex: initial; /*flex-grow: 0, flex-shrink: 1, flex-basis: auto*/
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
     margin: 0 5% 0 0;
     padding: 0;
     line-height: 1.8;
@@ -156,7 +184,7 @@ main p {
 }
 
 .nation-region {
-    flex: initial; /*flex-grow: 0, flex-shrink: 1, flex-basis: auto*/
+    flex: initial; /*shorthand for 0 1 auto (grow, shrink, basis)*/
     margin: 0;
     padding: 0;
     line-height: 1.8;
@@ -186,8 +214,33 @@ main p {
     }
 }
 
+/*footer and its contents*/
 footer {
     width: 90%;
     margin: 0;
     padding: .5em 5%;
+}
+
+footer p {
+    line-height: 1.8;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+}
+
+@media all and (min-width: 300px) {
+    footer p {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    footer p {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    footer p {
+        font-size: 1em;
+    }
 }
