@@ -142,6 +142,20 @@ main p {
 @media all and (min-width: 300px) {
     .nation-name {
         width: 30%;
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .nation-name {
+        width: 30%;
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .nation-name {
+        width: 30%;
         font-size: 1em;
     }
 }
