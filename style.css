@@ -77,6 +77,18 @@ nav label, footer p {
 
 @media all and (min-width: 300px) {
     nav label, footer p {
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    nav label, footer p {
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    nav label, footer p {
         font-size: 1em;
     }
 }
