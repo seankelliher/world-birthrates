@@ -173,6 +173,20 @@ main p {
 @media all and (min-width: 300px) {
     .nation-region {
         width: 15%;
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .nation-region {
+        width: 15%;
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .nation-region {
+        width: 15%;
         font-size: 1em;
     }
 }
