@@ -112,6 +112,20 @@ main p {
 @media all and (min-width: 300px) {
     .nation-rate {
         width: 10%;
+        font-size: .825em;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .nation-rate {
+        width: 10%;
+        font-size: .875em;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .nation-rate {
+        width: 10%;
         font-size: 1em;
     }
 }
