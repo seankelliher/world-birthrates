@@ -119,14 +119,14 @@ main p {
 
 @media all and (min-width: 600px) {
     .nation-rate {
-        width: 15%;
+        /*width inherited*/
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 900px) {
     .nation-rate {
-        width: 15%;
+        /*width inherited*/
         font-size: 1em;
     }
 }
