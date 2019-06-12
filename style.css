@@ -69,26 +69,26 @@ h1 {
     }
 }
 
-nav label, footer p {
+header p, nav label, footer p {
     line-height: 1.8;
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
-    nav label, footer p {
+    header p, nav label, footer p {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 600px) {
-    nav label, footer p {
+    header p, nav label, footer p {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 900px) {
-    nav label, footer p {
+    header p, nav label, footer p {
         font-size: 1em;
     }
 }
