@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     "use strict";
 
     //Invoke the sort high to low function.
-    birthrates.sortHighToLow();
+    birthrates.sortLowToHigh();
 
     //Get nav and ready event listener. If user clicks...
     const nav = document.querySelector("nav");
