@@ -96,7 +96,7 @@ nav {
     }
 }
 
-input {
+input, label {
     cursor: pointer;
 }
 
