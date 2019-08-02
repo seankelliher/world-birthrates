@@ -66,13 +66,6 @@ nav {
     padding: .5em 5%;
 }
 
-/*Clearfix for nav*/
-nav::after {
-    clear: both;
-    content: "";
-    display: table;
-}
-
 nav label {
     line-height: 1.8;
     font-family: 'Merriweather', serif;
