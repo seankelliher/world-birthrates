@@ -66,26 +66,26 @@ nav {
     padding: .5em 5%;
 }
 
-nav label {
+.radio-button label {
     line-height: 1.8;
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
-    nav label {
+    .radio-button label {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 600px) {
-    nav label {
+    .radio-button label {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 900px) {
-    nav label {
+    .radio-button label {
         font-size: 1em;
     }
 }
