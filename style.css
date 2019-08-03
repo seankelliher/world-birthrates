@@ -113,17 +113,32 @@ nav {
     .radio-button label {
         font-size: .825em;
     }
+
+    /*inner circle*/
+    .radio-button input[type=radio]:checked + label::after {
+        bottom: 1.5em;
+    }
 }
 
 @media all and (min-width: 600px) {
     .radio-button label {
         font-size: .875em;
     }
+
+    /*inner circle*/
+    .radio-button input[type=radio]:checked + label::after {
+        bottom: 1.59375em;
+    }
 }
 
 @media all and (min-width: 900px) {
     .radio-button label {
         font-size: 1em;
+    }
+
+    /*inner circle*/
+    .radio-button input[type=radio]:checked + label::after {
+        bottom: 1.5em;
     }
 }
 
