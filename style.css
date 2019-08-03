@@ -106,7 +106,7 @@ nav {
     width: 1.25em;
     height: 1.25em;
     border-radius: 50%;
-    background: #43a047;
+    background: #00acc1; /*cyan 600*/
 }
 
 @media all and (min-width: 300px) {
