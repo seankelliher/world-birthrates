@@ -72,6 +72,10 @@ nav {
     display: inline-block;
 }
 
+.radio-button input[type='radio'] {
+    display: none;
+}
+
 .radio-button label {
     line-height: 1.8;
     font-family: 'Merriweather', serif;
