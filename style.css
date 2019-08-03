@@ -97,6 +97,18 @@ nav {
     border: 2px solid #000;
 }
 
+/*inner circle*/
+.radio-button input[type=radio]:checked + label::after {
+    content: " ";
+    display: block;
+    position: relative;
+    right: .25em;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 50%;
+    background: #43a047;
+}
+
 @media all and (min-width: 300px) {
     .radio-button label {
         font-size: .825em;
