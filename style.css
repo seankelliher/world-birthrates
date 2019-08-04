@@ -35,26 +35,26 @@ h1 {
     }
 }
 
-header p {
+header p, .radio-button {
     line-height: 1.8;
     font-family: 'Merriweather', serif;
     font-weight: 400;
 }
 
 @media all and (min-width: 300px) {
-    header p {
+    header p, .radio-button {
         font-size: .825em;
     }
 }
 
 @media all and (min-width: 600px) {
-    header p {
+    header p, .radio-button {
         font-size: .875em;
     }
 }
 
 @media all and (min-width: 900px) {
-    header p {
+    header p, .radio-button {
         font-size: 1em;
     }
 }
