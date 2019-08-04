@@ -102,6 +102,20 @@ nav::after {
     display: inline-block;
 }
 
+/*inner circle*/
+.radio-button input[type=radio]:checked + label::after {
+    content: " ";
+    width: 1.4em;
+    height: 1.4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%; /*w3c suggests adding this*/
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #00acc1; /*cyan 600*/
+}
+
 input, label {
     cursor: pointer;
 }
