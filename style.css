@@ -95,6 +95,13 @@ nav::after {
     border-radius: 50%;
 }
 
+/*span to hold text*/
+.radio-button label span {
+    width: 8em;
+    margin-left: 2.4em;
+    display: inline-block;
+}
+
 /*outer-circle*/
 .radio-button label::before {
     content: " ";
