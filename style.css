@@ -66,6 +66,13 @@ nav {
     padding: .5em 5%;
 }
 
+/*Clearfix for nav*/
+nav::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
 .radio-button {
     margin: 0 1.4em 0 0;
     padding: 0;
