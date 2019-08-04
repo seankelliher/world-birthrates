@@ -74,9 +74,10 @@ nav::after {
 }
 
 .radio-button {
-    margin: 0 1.4em 0 0;
+    width: 40%;
+    margin: 0 10% 0 0;
     padding: 0;
-    display: inline-block;
+    float: left;
 }
 
 .radio-button input[type='radio'] {
