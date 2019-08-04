@@ -80,6 +80,7 @@ nav::after {
     float: left;
 }
 
+/*hides the default radio buttons*/
 .radio-button input[type='radio'] {
     display: none;
 }
