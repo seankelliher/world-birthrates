@@ -68,18 +68,22 @@ nav {
 }
 
 /*Clearfix for nav*/
-nav::after {
+/*nav::after {
     clear: both;
     content: "";
     display: table;
-}
+}*/
 
 .radio-button {
     width: 100%;
     margin: 0 0 .5em 0;
     padding: 0;
-    float: left;
+    clear: both;
     background: lightcyan;
+}
+
+.radio-button:last-child {
+    margin: 0;
 }
 
 /*hides the default radio buttons*/
