@@ -75,8 +75,8 @@ nav::after {
 }
 
 .radio-button {
-    width: 40%;
-    margin: 0 10% 0 0;
+    width: 100%;
+    margin: 0 0 .5em 0;
     padding: 0;
     float: left;
     background: lightcyan;
