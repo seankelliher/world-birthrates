@@ -67,13 +67,6 @@ nav {
     background: lightgreen;
 }
 
-/*Clearfix for nav*/
-/*nav::after {
-    clear: both;
-    content: "";
-    display: table;
-}*/
-
 .radio-button {
     width: 100%;
     margin: 0 0 .5em 0;
