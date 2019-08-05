@@ -64,7 +64,6 @@ nav {
     width: 90%;
     margin: 0;
     padding: .5em 5%;
-    background: lightgreen;
 }
 
 .radio-button {
@@ -72,7 +71,6 @@ nav {
     margin: 0 0 .5em 0;
     padding: 0;
     clear: both;
-    background: lightcyan;
 }
 
 .radio-button:last-child {
