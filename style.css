@@ -16,18 +16,27 @@ header {
     flex: initial; /*flex: 0 1 auto*/
 }
 
-/*nav and its contents*/
 nav {
-    width: 90%;
+    width: 95%;
     margin: 0;
-    padding: .5em 5%;
+    padding: .5em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+    border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
-/*main and its contents*/
 main {
-    width: 90%;
-    margin: 1.5em 5%;
-    padding: 0;
+    width: 95%;
+    margin: 0;
+    padding: .5em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
 }
 
 /*footer and its contents*/
