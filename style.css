@@ -102,6 +102,18 @@ section {
     }
 }
 
+/*Classes for "p" elements*/
+/*.rate {
+}
+
+.name {
+}*/
+
+.region {
+    border-radius: .25em;
+    text-align: center;
+}
+
 /*footer and its contents*/
 footer {
     width: 90%;
