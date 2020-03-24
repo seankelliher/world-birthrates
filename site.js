@@ -1,4 +1,4 @@
-//Global variable (actually let)
+//Global variable.
 let birthrates;
 
 //Monitor page, after it loads invoke function.
@@ -7,23 +7,53 @@ let birthrates;
 window.addEventListener("load", function () {
     "use strict";
 
-    //Invoke the sort high to low function.
-    birthrates.sortLowToHigh();
+    //Invoke function.
+    birthrates.sortNationAscending();
 
-    //Get nav and ready event listener. If user clicks...
+    //Get nav and ready event listener.
     const nav = document.querySelector("nav");
 
-    //...then invoke a function.
+    //See what user clicks. Invoke matching function.
     nav.addEventListener("click", function (event) {
-        if (event.target.id === "high-to-low") {
-            birthrates.sortHighToLow();
-        } else if (event.target.id === "low-to-high") {
-            birthrates.sortLowToHigh();
+
+        const ascending = event.target.classList.contains("ascending");
+        const descending = event.target.classList.contains("descending");
+
+        if (event.target.id === "rate-click") {
+            if (ascending === true) {
+                event.target.classList.remove("ascending");
+                event.target.classList.add("descending");
+                birthrates.sortRateDescending();
+            } else if (descending === true) {
+                event.target.classList.remove("descending");
+                event.target.classList.add("ascending");
+                birthrates.sortRateAscending();
+            }
+        } else if (event.target.id === "nation-click") {
+            if (ascending === true) {
+                event.target.classList.remove("ascending");
+                event.target.classList.add("descending");
+                birthrates.sortNationDescending();
+            } else if (descending === true) {
+                event.target.classList.remove("descending");
+                event.target.classList.add("ascending");
+                birthrates.sortNationAscending();
+            }
+        } else if (event.target.id === "region-click") {
+            if (ascending === true) {
+                event.target.classList.remove("ascending");
+                event.target.classList.add("descending");
+                birthrates.sortRegionDescending();
+            } else if (descending === true) {
+                event.target.classList.remove("descending");
+                event.target.classList.add("ascending");
+                birthrates.sortRegionAscending();
+            }
         }
     });
 });
 
-//The birthrates variable (let)
+//Birthrates variable.
 birthrates = {
 
     items: [
