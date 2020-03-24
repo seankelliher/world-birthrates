@@ -1478,6 +1478,31 @@ birthrates = {
         birthrates.displayResults(nationAscending);
     },
 
+    //Sort by nation, descending.
+    sortNationDescending: function () {
+        "use strict";
+
+        const nationDescending = birthrates.items.sort(function (a, b) {
+
+            const itemA = a.nation.toUpperCase();
+            const itemB = b.nation.toUpperCase();
+
+            if (itemA < itemB) {
+                return 1;
+            }
+
+            if (itemA > itemB) {
+                return -1;
+            }
+
+            return 0;
+        });
+
+        //Invoke next functions.
+        birthrates.removeAll();
+        birthrates.displayResults(nationDescending);
+    },
+
     //Receive sort result. Build and display elements.
     displayResults: function (srank) {
         "use strict";
