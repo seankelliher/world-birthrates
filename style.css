@@ -51,6 +51,57 @@ section {
     border-bottom: 1px solid #EEE; /*grey 200*/
 }
 
+.column {
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+/*Classes for .column*/
+.rate-column {
+    width: 15%;
+}
+
+@media all and (min-width: 300px) {
+    .nation-column {
+        width: 35%;
+    }
+
+    .region-column {
+        width: 40%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .nation-column {
+        width: 40%;
+    }
+
+    .region-column {
+        width: 35%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .nation-column {
+        width: 45%;
+    }
+
+    .region-column {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .nation-column {
+        width: 50%;
+    }
+
+    .region-column {
+        width: 25%;
+    }
+}
+
 /*footer and its contents*/
 footer {
     width: 90%;
