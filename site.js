@@ -1561,61 +1561,76 @@ birthrates = {
         //For each function.
         Object.keys(srank).forEach(function (key) {
 
-            //Create p element.
-            const para = document.createElement("p");
+            //Create section element.
+            const section = document.createElement("section");
+
+            //Create column elements.
+            const col1 = document.createElement("div");
+            const col2 = document.createElement("div");
+            const col3 = document.createElement("div");
+
+            //Add class to column elements.
+            col1.classList.add("column", "rate-column");
+            col2.classList.add("column", "nation-column");
+            col3.classList.add("column", "region-column");
 
             //Create p elements.
-            const span1 = document.createElement("span");
-            const span2 = document.createElement("span");
-            const span3 = document.createElement("span");
+            const para1 = document.createElement("p");
+            const para2 = document.createElement("p");
+            const para3 = document.createElement("p");
 
             //Assign class names to p elements.
-            span1.className = "nation-name";
-            span2.className = "nation-rate";
-            span3.className = "nation-region";
+            para1.classList.add("rate");
+            para2.classList.add("name");
+            para3.classList.add("region");
 
-            //Assign background colors to "nation-region" class.
+            //Assign background colors to "para3".
             if (srank[key].region === "Africa") {
-                span3.style.background = "#ffccbc";
+                para3.style.background = "#FFCCBC";
             } else if (srank[key].region === "Caribbean") {
-                span3.style.background = "#b2ebf2";
+                para3.style.background = "#B2EBF2";
             } else if (srank[key].region === "Central America") {
-                span3.style.background = "#bdc192";
+                para3.style.background = "#BDC192";
             } else if (srank[key].region === "Central Asia") {
-                span3.style.background = "#5d99c6";
+                para3.style.background = "#5D99C6";
             } else if (srank[key].region === "East Asia") {
-                span3.style.background = "#bbdefb";
+                para3.style.background = "#BBDEFB";
             } else if (srank[key].region === "Europe") {
-                span3.style.background = "#e0e0e0";
+                para3.style.background = "#E0E0E0";
             } else if (srank[key].region === "Middle East") {
-                span3.style.background = "#c5cae9";
+                para3.style.background = "#C5CAE9";
             } else if (srank[key].region === "North America") {
-                span3.style.background = "#e6ee9c";
+                para3.style.background = "#E6EE9C";
             } else if (srank[key].region === "Oceania") {
-                span3.style.background = "#b2dfdb";
+                para3.style.background = "#B2DFDB";
             } else if (srank[key].region === "Scandinavia") {
-                span3.style.background = "#bdbdbd";
+                para3.style.background = "#BDBDBD";
             } else if (srank[key].region === "South America") {
-                span3.style.background = "#f0f4c3";
+                para3.style.background = "#F0F4C3";
             } else if (srank[key].region === "South Asia") {
-                span3.style.background = "#8aacc8";
+                para3.style.background = "#8AACC8";
             } else if (srank[key].region === "Southeast Asia") {
-                span3.style.background = "#90caf9";
+                para3.style.background = "#90CAF9";
             }
 
             //Assign text content to p elements.
-            span1.textContent = srank[key].nation;
-            span2.textContent = srank[key].rate;
-            span3.textContent = srank[key].region;
+            para1.textContent = srank[key].rate;
+            para2.textContent = srank[key].nation;
+            para3.textContent = srank[key].region;
 
-            //Join span and p elements.
-            para.appendChild(span2);
-            para.appendChild(span1);
-            para.appendChild(span3);
+            //Append p elements to column elements.
+            col1.appendChild(para1);
+            col2.appendChild(para2);
+            col3.appendChild(para3);
 
-            //Join paragraph and span elements.
+            //Append column elements to section element.
+            section.appendChild(col1);
+            section.appendChild(col2);
+            section.appendChild(col3);
+
+            //Append section element to main element.
             const main = document.querySelector("main");
-            main.appendChild(para);
+            main.appendChild(section);
         });
     }
 
