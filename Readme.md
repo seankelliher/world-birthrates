@@ -1,6 +1,6 @@
 # World Birthrates
 
-Sortable list of birthrates for the 226 nations in the world. The list can be sorted "high to low" or "low to high." Also, a color-coding system shows which region of the world each nation belongs to.
+Sortable list of birthrates for the 226 nations in the world. The list can be sorted in ascending or descending order by (1) birthrate, (2) nation name, or (3) world region. World regions are color-coded for visual appeal and easier readability.
 
 ## Authors
 
