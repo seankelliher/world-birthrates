@@ -1427,34 +1427,6 @@ birthrates = {
         }
     },
 
-    //Sort nations by rank, high to low.
-    sortHighToLow: function () {
-        "use strict";
-
-        //Sort object. Pass result to other function.
-        const highToLow = birthrates.items.sort(function (a, b) {
-            return a.rank - b.rank;
-        });
-
-        //Invoke other functions.
-        birthrates.removeAll();
-        birthrates.displayResults(highToLow);
-    },
-
-    //Sort nations by rank, low to high.
-    sortLowToHigh: function () {
-        "use strict";
-
-        //Sort object. Pass result to other function.
-        const lowToHigh = birthrates.items.sort(function (a, b) {
-            return -(a.rank - b.rank);
-        });
-
-        //Invoke other functions.
-        birthrates.removeAll();
-        birthrates.displayResults(lowToHigh);
-    },
-
     //Receive sort result. Build and display elements.
     displayResults: function (srank) {
         "use strict";
