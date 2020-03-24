@@ -1528,6 +1528,32 @@ birthrates = {
         birthrates.displayResults(regionAscending);
     },
 
+    //Sort by region, descending.
+    sortRegionDescending: function () {
+        "use strict";
+
+        //Sort object. Pass result to other function.
+        const regionDescending = birthrates.items.sort(function (a, b) {
+
+            const itemA = a.region.toUpperCase();
+            const itemB = b.region.toUpperCase();
+
+            if (itemA < itemB) {
+                return 1;
+            }
+
+            if (itemA > itemB) {
+                return -1;
+            }
+
+            return 0;
+        });
+
+        //Invoke next functions.
+        birthrates.removeAll();
+        birthrates.displayResults(regionDescending);
+    },
+
     //Receive sort result. Build and display elements.
     displayResults: function (srank) {
         "use strict";
