@@ -1427,6 +1427,19 @@ birthrates = {
         }
     },
 
+    //Sort by rank, ascending.
+    sortRateAscending: function () {
+        "use strict";
+
+        const rateAscending = birthrates.items.sort(function (a, b) {
+            return b.rate - a.rate;
+        });
+
+        //Invoke next functions.
+        birthrates.removeAll();
+        birthrates.displayResults(rateAscending);
+    },
+
     //Receive sort result. Build and display elements.
     displayResults: function (srank) {
         "use strict";
