@@ -120,3 +120,45 @@ footer {
     padding: 1em 2.5%;
     flex: initial; /*flex: 0 1 auto*/
 }
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', serif;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/*Unique styles for p elements within nav*/
+nav p {
+    color: #007AC1; /*light blue 500 dark*/
+}
+
+nav p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media all and (min-width: 300px) {
+    p {
+        font-size: .9375em; /*15 pixels*/
+    }
+
+    h1 {
+        font-size: 1.4375em; /*23 pixels*/
+    }
+}
+
+@media all and (min-width: 600px) {
+    p {
+        font-size: 1em; /*16 pixels*/
+    }
+
+    h1 {
+        font-size: 1.5em; /*24 pixels*/
+    }
+}
