@@ -114,9 +114,9 @@ section {
     text-align: center;
 }
 
-/*footer and its contents*/
 footer {
-    width: 90%;
+    width: 95%;
     margin: 0;
-    padding: .5em 5%;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
 }
