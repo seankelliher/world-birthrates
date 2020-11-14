@@ -1,28 +1,32 @@
-# World Birthrates
+[![MIT License on GitHub](https://img.shields.io/github/license/seankelliher/world-birthrates?style=flat-square)](/LICENSE.txt)
+## World Birthrates
 
-Sortable list of birthrates for the 226 nations in the world. The list can be sorted in ascending or descending order by (1) birthrate, (2) nation name, or (3) world region. World regions are color-coded for visual appeal and easier readability.
+Sortable list of world birthrates.
 
-## Authors
+## Project Screen Shots
 
-* **Sean Kelliher** - [seankelliher](https://github.com/seankelliher)
+![screen shot of project](/screenshots/world-birthrates-screenshot1.jpg)
 
-## Deployment
+![screen shot of project](/screenshots/world-birthrates-screenshot2.jpg)
 
-All you need is a web browser. Code works in a local or remote environment.
+![screen shot of project](/screenshots/world-birthrates-screenshot3.jpg)
 
-## Built With
+## Installation and Setup Instructions
 
-* CSS
-* HTML
-* JavaScript
+This is a static component. All you need is a web browser.
 
-## License
+## Reflection
 
-This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
+I wanted to build a component where users can sort birthrates for the world's 226 nations by birthrate and nation name. I also wanted to display the region of the world each nation belongs to, color-code the regions for easier recognition, and allow users to sort by world region as well. 
+
+One of the challenges in accomplishing this was managing such a large amount of information, and ensuring it could be accessed and displayed in six different ways (3 categories, each ascending and descending).
+
+There was no available API to draw the data from somewhere else so I built a large object and stored the birthrate data within it. I used  "vanilla JavaScript" to accomplish my goals. I built six simple "while" loops to sort data (one for each possible option), and one "forEach" loop that received the selected sorted result and built and color-coded the page elements from it.
 
 ## Acknowledgments
 
-* Readme file based on [template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) by Billie Thompson.
-* Design guidance from Google's [Material Design](https://material.io/design).
-* Fonts from [Google Fonts](https://fonts.google.com).
 * Birthrate data from the [Central Intelligence Agency](https://www.cia.gov/LIBRARY/publications/the-world-factbook/rankorder/2054rank.html).
+* Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
+* Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/trends).
+* Fonts from [Google Fonts](https://fonts.google.com).
+* Shields from [Shields](https://shields.io).
