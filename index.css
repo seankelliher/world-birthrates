@@ -1,0 +1,164 @@
+#container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+header {
+    width: 95%;
+    margin: 0;
+    padding: .5em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+nav {
+    width: 95%;
+    margin: 0;
+    padding: .5em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+    border-bottom: 1px solid #EEE; /*grey 200*/
+}
+
+main {
+    width: 95%;
+    margin: 0;
+    padding: .5em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+}
+
+section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; /*main axis*/
+    align-items: flex-start; /*cross axis*/
+    border-bottom: 1px solid #EEE; /*grey 200*/
+}
+
+.column {
+    margin: 0;
+    padding: 0;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+/*Classes for .column*/
+.rate-column {
+    width: 15%;
+}
+
+@media all and (min-width: 300px) {
+    .nation-column {
+        width: 35%;
+    }
+
+    .region-column {
+        width: 40%;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .nation-column {
+        width: 40%;
+    }
+
+    .region-column {
+        width: 35%;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .nation-column {
+        width: 45%;
+    }
+
+    .region-column {
+        width: 30%;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .nation-column {
+        width: 50%;
+    }
+
+    .region-column {
+        width: 25%;
+    }
+}
+
+/*Classes for "p" elements*/
+/*.rate {
+}
+
+.name {
+}*/
+
+.region {
+    border-radius: .25em;
+    text-align: center;
+}
+
+footer {
+    width: 95%;
+    margin: 0;
+    padding: 1em 2.5%;
+    flex: initial; /*flex: 0 1 auto*/
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Roboto', serif;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/*Unique styles for p elements within nav*/
+nav p {
+    color: #007AC1; /*light blue 500 dark*/
+}
+
+nav p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media all and (min-width: 300px) {
+    p {
+        font-size: .9375em; /*15 pixels*/
+    }
+
+    h1 {
+        font-size: 1.4375em; /*23 pixels*/
+    }
+}
+
+@media all and (min-width: 600px) {
+    p {
+        font-size: 1em; /*16 pixels*/
+    }
+
+    h1 {
+        font-size: 1.5em; /*24 pixels*/
+    }
+}
