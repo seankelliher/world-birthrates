@@ -13,7 +13,7 @@ Sortable list of world birthrates.
 
 ## Installation and Setup Instructions
 
-This is a static component. All you need is a web browser.
+This is a static component. All you need is a web browser. However, component uses ES6 modules. Developing locally may require disabling your browser's local file restrictions.
 
 ## Reflection
 
@@ -27,6 +27,7 @@ There was no available API to draw the data from somewhere else so I built a lar
 
 * Birthrate data from the [Central Intelligence Agency](https://www.cia.gov/LIBRARY/publications/the-world-factbook/rankorder/2054rank.html).
 * Readme guidance from [Brenna Martenson](https://gist.github.com/martensonbj/6bf2ec2ed55f5be723415ea73c4557c4).
+* JavaScript guidance from [JSLint](http://jslint.com).
 * Design guidance from Google's [Material Design](https://material.io/design) and [Adobe Color](https://color.adobe.com/trends).
 * Fonts from [Google Fonts](https://fonts.google.com).
 * Shields from [Shields](https://shields.io).
