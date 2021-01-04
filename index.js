@@ -17,6 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     //Monitor nav for clicks.
     monitorNav();
 
-    //Simulate click on "rate" heading.
-    rate.click();
+    //Simulate click on "nation" heading.
+    nation.click();
 });
